@@ -1,4 +1,4 @@
-package Games;
+package Games.firstgame;
 
 import org.newdawn.slick.*;
 
