@@ -28,5 +28,7 @@ public class Shapes extends BasicGame{
     @Override
     public void render(GameContainer gameContainer, Graphics graphics) throws SlickException {
         graphics.drawRect(this.x,this.y,100,100);
+        graphics.drawOval(200,200,100,100);
+        graphics.drawOval(300,300,100,300);
     }
 }
