@@ -21,7 +21,7 @@ public class Rectangle extends BasicGame {
 
     @Override
     public void update(GameContainer gameContainer, int delta) throws SlickException {
-        this.x +=(float) delta/this.speed;
+        this.x +=(float) delta/this.speed*10;
         System.out.println(delta);
     }
 
