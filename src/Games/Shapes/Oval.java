@@ -23,11 +23,11 @@ public class Oval {
     }
 
     public void Ovupdate(int i) {
-        if (this.x >=600)
+        if (this.x >600)
         {
-            rightDirection=true;}
-        if (this.x <=100) {
-            rightDirection=false;
+            rightDirection=false;}
+        if (this.x <100) {
+            rightDirection=true;
         }
 
         if(rightDirection==true)
