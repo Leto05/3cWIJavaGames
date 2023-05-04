@@ -4,7 +4,7 @@ import org.newdawn.slick.*;
 
 public class Shapes extends BasicGame{
 
-    private Rectangle r1 = new Rectangle(100,100,25,100,100);
+    private Rectangle r1 = new Rectangle(150,150,25,100,100);
     private Oval o1 = new Oval(100,0,25,125,50);
     private Circle c1 = new Circle(0,0,15,50,50);
 

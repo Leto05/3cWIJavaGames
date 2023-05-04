@@ -9,6 +9,7 @@ public class Circle {
     private float speed;
     private float width;
     private float length;
+    private boolean downDirection;
 
     public Circle(float x,float y,float speed, float width, float length)
     {
@@ -22,7 +23,21 @@ public class Circle {
     }
 
     public void Ciupdate(int i) {
-        this.x+=(float) i/this.speed*10;
+        if (this.y >400)
+        {
+            downDirection=false;}
+        if (this.y <100) {
+            downDirection=true;
+        }
+
+        if(downDirection==true)
+        {
+            this.y += (float) i / this.speed * 10;
+        }
+        else if(downDirection==false)
+        {
+            this.y -= (float) i / this.speed * 10;
+        }
     }
     public float getX() {
         return x;
