@@ -10,6 +10,7 @@ public class Rectangle {
     private float width;
     private float length;
     private boolean rightDirection;
+    private boolean leftDirection;
     private boolean downDirection;
     private boolean uppDirection;
 
@@ -26,33 +27,39 @@ public class Rectangle {
 
     public void Rectupdate(int i) {
 
-        if (this.x >=550)
+        if (this.x <=550&& this.y<=150)
         {
-            rightDirection=false;
+          rightDirection=true;
         }
+        else{rightDirection=false;}
 
-        if (this.x <=150) {
-            rightDirection=true;
-        }
-
-        if (this.x >=550)
+        if (this.y<=400&& this.x>=550)
         {
             downDirection=true;
         }
-        if (this.y >=450) {
-            downDirection=false;
-            rightDirection=false;
+        else{downDirection=false;}
+
+        if (this.x>=150&& this.y>=400)
+        {
+            leftDirection=true;
         }
+        else{leftDirection=false;}
+
+        if(this.x<=150&& this.y>=150)
+        {
+            uppDirection=true;
+        }
+        else{uppDirection=false;}
+
 
         if(rightDirection==true)
         {
             this.x += (float) i / this.speed * 10;
         }
-        if(rightDirection==false)
+        if(leftDirection==true)
         {
             this.x -= (float) i / this.speed * 10;
         }
-        System.out.println(x);
 
         if(downDirection==true)
         {
