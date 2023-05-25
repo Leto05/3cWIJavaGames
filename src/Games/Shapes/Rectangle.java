@@ -3,7 +3,7 @@ package Games.Shapes;
 import org.newdawn.slick.GameContainer;
 import org.newdawn.slick.SlickException;
 
-public class Rectangle {
+public class Rectangle implements ObjectActor{
     private float x;
     private float y;
     private float speed;
@@ -25,7 +25,7 @@ public class Rectangle {
     public void init(GameContainer gameContainer) throws SlickException {
     }
 
-    public void Rectupdate(int i) {
+    public void update(int i) {
 
         if (this.x <=550&& this.y<=150)
         {

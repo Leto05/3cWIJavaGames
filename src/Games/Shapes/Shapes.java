@@ -18,9 +18,9 @@ public class Shapes extends BasicGame{
 
     @Override
     public void update(GameContainer gameContainer, int i) throws SlickException {
-        r1.Rectupdate(i);
-        o1.Ovupdate(i);
-        c1.Ciupdate(i);
+        r1.update(i);
+        o1.update(i);
+        c1.update(i);
         System.out.println(i);
     }
 

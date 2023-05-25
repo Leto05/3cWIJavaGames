@@ -3,7 +3,7 @@ package Games.Shapes;
 import org.newdawn.slick.GameContainer;
 import org.newdawn.slick.SlickException;
 
-public class Circle {
+public class Circle implements ObjectActor{
     private float x;
     private float y;
     private float speed;
@@ -22,7 +22,7 @@ public class Circle {
     public void init(GameContainer gameContainer) throws SlickException {
     }
 
-    public void Ciupdate(int i) {
+    public void update(int i) {
         if (this.y >400)
         {
             downDirection=false;}

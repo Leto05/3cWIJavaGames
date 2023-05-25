@@ -3,7 +3,7 @@ package Games.Shapes;
 import org.newdawn.slick.GameContainer;
 import org.newdawn.slick.SlickException;
 
-public class Oval {
+public class Oval implements ObjectActor{
     private float x;
     private float y;
     private float speed;
@@ -22,7 +22,7 @@ public class Oval {
     public void init(GameContainer gameContainer) throws SlickException {
     }
 
-    public void Ovupdate(int i) {
+    public void update(int i) {
         if (this.x >600)
         {
             rightDirection=false;}
